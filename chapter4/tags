@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DNS	.\DNS-basic.py	/^import sys, DNS$/;"	i
+DNS	.\DNSany.py	/^import sys, DNS$/;"	i
+DNS	.\DNSquery.py	/^import sys, DNS, re$/;"	i
+answerobj	.\DNS-basic.py	/^answerobj = regobj.req(name = query, qtype = DNS.Type.ANY)$/;"	v
+answers	.\DNSany.py	/^	answers = nslookup(query, DNS.Type.ANY)$/;"	v
+answers	.\DNSquery.py	/^		answers = DNSany.nslookup(query, qtype, verbose = 0)$/;"	v
+count	.\DNSquery.py	/^		count = 0$/;"	v
+counter	.\getaddrinfo-list-broken.py	/^counter = 0$/;"	v
+counter	.\getaddrinfo-list.py	/^counter = 0$/;"	v
+data	.\DNSquery.py	/^				data = "\\n" + '\\n'.join([str(x) for x in answer['data']])$/;"	v
+descriptions	.\DNSquery.py	/^descriptions = {'A': 'IP address',$/;"	v
+donequeries	.\DNSquery.py	/^donequeries = []$/;"	v
+findnameservers	.\DNSany.py	/^def findnameservers(hostname):$/;"	f
+formatline	.\DNSquery.py	/^def formatline(index, typename, descr, data):$/;"	f
+gethostname	.\gethostbyaddr-paranoid.py	/^def gethostname(ipaddr):$/;"	f
+getipaddrs	.\environment.py	/^def getipaddrs(hostname):$/;"	f
+getipaddrs	.\gethostbyaddr-paranoid.py	/^def getipaddrs(hostname):$/;"	f
+getrecordsfromnamesever	.\DNSany.py	/^def getrecordsfromnamesever(qstring, qtype, nslist):$/;"	f
+getreverse	.\DNSquery.py	/^def getreverse(query):$/;"	f
+hierquery	.\DNSany.py	/^def hierquery(qstring, qtype):$/;"	f
+hostname	.\environment.py	/^hostname = socket.gethostname()$/;"	v
+nslookup	.\DNSany.py	/^def nslookup(qstring, qtype, verbose = 1):$/;"	f
+queries	.\DNSquery.py	/^queries = [(sys.argv[1], DNS.Type.ANY)]$/;"	v
+query	.\DNS-basic.py	/^query = sys.argv[1]$/;"	v
+query	.\DNSany.py	/^	query = sys.argv[1]$/;"	v
+re	.\DNSquery.py	/^import sys, DNS, re$/;"	i
+regobj	.\DNS-basic.py	/^regobj = DNS.Request()$/;"	v
+result	.\getaddrinfo-basic.py	/^result = socket.getaddrinfo(sys.argv[1], None)$/;"	v
+result	.\getaddrinfo-list-broken.py	/^result = socket.getaddrinfo(sys.argv[1], None) #第一个是域名， 第二个是端口$/;"	v
+result	.\getaddrinfo-list.py	/^result = socket.getaddrinfo(sys.argv[1], None, 0, socket.SOCK_STREAM)$/;"	v
+result	.\gethostbyaddr-basic.py	/^	result = socket.gethostbyaddr(sys.argv[1])$/;"	v
+result	.\gethostbyaddr.py	/^	result = socket.gethostbyaddr(sys.argv[1])$/;"	v
+rev	.\DNSquery.py	/^	rev = getreverse(query)$/;"	v
+socket	.\environment.py	/^import sys, socket$/;"	i
+socket	.\getaddrinfo-basic.py	/^import sys, socket$/;"	i
+socket	.\getaddrinfo-list-broken.py	/^import sys, socket$/;"	i
+socket	.\getaddrinfo-list.py	/^import sys, socket$/;"	i
+socket	.\gethostbyaddr-basic.py	/^import sys, socket$/;"	i
+socket	.\gethostbyaddr-paranoid.py	/^import sys, socket$/;"	i
+socket	.\gethostbyaddr.py	/^import sys, socket$/;"	i
+sys	.\DNS-basic.py	/^import sys, DNS$/;"	i
+sys	.\DNSany.py	/^import sys, DNS$/;"	i
+sys	.\DNSquery.py	/^import sys, DNS, re$/;"	i
+sys	.\environment.py	/^import sys, socket$/;"	i
+sys	.\getaddrinfo-basic.py	/^import sys, socket$/;"	i
+sys	.\getaddrinfo-list-broken.py	/^import sys, socket$/;"	i
+sys	.\getaddrinfo-list.py	/^import sys, socket$/;"	i
+sys	.\gethostbyaddr-basic.py	/^import sys, socket$/;"	i
+sys	.\gethostbyaddr-paranoid.py	/^import sys, socket$/;"	i
+sys	.\gethostbyaddr.py	/^import sys, socket$/;"	i
