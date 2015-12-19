@@ -1,4 +1,4 @@
-#Pythonwangluo编程基础源码-python3版
+#Python网络编程基础源码-python3版
 
 ###1.申明
 本程序编写在windows下，有些Unix的程序无法实现，有一些包并不能使用，如pydns
