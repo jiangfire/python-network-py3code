@@ -1,0 +1,12 @@
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+To: reciplient@example.com
+From: Test Sender <sender@example.com>
+Subject: Test Message, Chapter 9
+Date: Wed, 30 Dec 2015 19:01:51 +0800
+Message-ID: <145147331182.30220.6565786885898626143@NEOLIDY.imut.edu.cn>
+
+Hello,
+This is a test message from chapter 9. I hope you enjoy it!
+-- Anonymous
