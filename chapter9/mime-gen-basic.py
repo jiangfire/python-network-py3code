@@ -39,3 +39,6 @@ msg.attach(body)
 for filename in sys.argv[1:]:
     msg.attach(attachment(filename))
 print(msg.as_string())
+fd = open(file='message.txt', mode='w')
+fd.write(msg.as_string())
+fd.close()

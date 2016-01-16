@@ -18,5 +18,4 @@ msg['From'] = fromhdr
 msg['Subject'] = Header('Test Message, Chapter 10')
 msg['Date'] = utils.formatdate(localtime=1)
 msg['Message-ID'] = utils.make_msgid()
-
 print(msg.as_string())
