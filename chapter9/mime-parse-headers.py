@@ -5,8 +5,8 @@
 import sys, email, codecs
 from email import header
 
-fd = open('header.txt')
-msg = email.message_from_file(fd)
+fd = open('header.txt', mode='rb')
+msg = email.message_from_binary_file(fd)
 for pheader, value in msg.items():
     headerparts = header.decode_header(value)
     headerval = []
@@ -15,7 +15,7 @@ for pheader, value in msg.items():
         if charset is None:
             charset = 'ascii'
         dec = codecs.getdecoder(charset)
-        enc = codecs.getencoder('iso-8859-1')
-        data = enc(dec(data.encode())[0])[0]
+        enc = codecs.getencoder('utf-8')
+        data = dec(enc(data)[0])[0]
         headerval.append(data)
         print(pheader, " ", " ".join(headerval))

@@ -12,10 +12,13 @@ This is a test message from chapter 9. I hope you enjoy it!
 
 msg = MIMEText(message)
 msg['To'] = 'recipient@example.com'
-fromhdr = Header("Michael M\xfcller", 'iso-8859-1')
+fromhdr = Header("Michael M\xfcller", 'utf-8')
 fromhdr.append('<mmueller@example.com>', 'ascii')
 msg['From'] = fromhdr
 msg['Subject'] = Header('Test Message, Chapter 10')
 msg['Date'] = utils.formatdate(localtime=1)
 msg['Message-ID'] = utils.make_msgid()
+fd = open("header.txt", mode='wb')
+fd.write(msg.as_bytes())
+fd.close()
 print(msg.as_string())
